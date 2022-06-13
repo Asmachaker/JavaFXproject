@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="752.0" prefWidth="1084.0" style="-fx-background-color: #d2e69c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Centre_dinteretController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="28.0" prefHeight="355.0" prefWidth="1055.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Text layoutX="392.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des utilisateurs">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <TableView fx:id="table" layoutX="95.0" layoutY="73.0" onMouseClicked="#Selection" prefHeight="272.0" prefWidth="866.0" style="-fx-background-color: #28b5b5;">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="130.0" text="ID" />
+                  <TableColumn fx:id="nom" prefWidth="201.0" text="Nom" />
+                  <TableColumn fx:id="prenom" prefWidth="211.0" text="Prénom" />
+                  <TableColumn fx:id="email" prefWidth="323.0" text="Email" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="404.0" prefHeight="334.0" prefWidth="1055.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Text layoutX="421.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Centre d'interet">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <TableView fx:id="interet" layoutX="149.0" layoutY="55.0" prefHeight="245.0" prefWidth="770.0" style="-fx-background-color: #28b5b5;">
+              <columns>
+                <TableColumn fx:id="tag" prefWidth="204.0" text="Tag" />
+                <TableColumn fx:id="titre" prefWidth="240.0" text="Titre" />
+                  <TableColumn fx:id="path" prefWidth="325.0" text="Chemin de fichier" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Text layoutX="1056.0" layoutY="24.0" onMouseClicked="#Back" strokeType="OUTSIDE" strokeWidth="0.0" text="X" wrappingWidth="28.3818359375">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

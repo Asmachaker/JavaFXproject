@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Admin_PageController">
+   <children>
+      <AnchorPane layoutX="18.0" layoutY="12.0" prefHeight="530.0" prefWidth="855.0" style="-fx-background-color: #28b5b5;">
+         <children>
+            <Line endX="-122.0" endY="221.5" layoutX="174.0" layoutY="185.0" startX="-122.5" startY="-23.0" strokeWidth="5.0" />
+            <Line endX="655.0" layoutX="171.0" layoutY="162.0" startX="-117.0" strokeWidth="5.0" />
+            <Line endX="653.9644775390625" endY="0.25" layoutX="170.0" layoutY="284.0" startX="-114.4644775390625" startY="0.25" strokeWidth="7.0" />
+            <Line endX="-100.0" endY="119.0" layoutX="540.0" layoutY="291.0" startX="-100.0" startY="-3.5" strokeWidth="5.0" />
+            <Line endX="660.0" endY="1.0" layoutX="170.0" layoutY="408.0" startX="-118.5" startY="1.0" strokeWidth="5.0" />
+            <Line endX="-100.0" endY="114.0" layoutX="540.0" layoutY="168.0" startX="-100.0" startY="-3.5" strokeWidth="5.0" />
+            <AnchorPane layoutX="55.0" layoutY="165.0" onMouseClicked="#Utilisateur" prefHeight="117.0" prefWidth="382.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Text layoutX="165.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mes utilisateurs" textAlignment="CENTER" wrappingWidth="177.68455412983894">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="76.0" fitWidth="76.0" layoutX="77.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../style/utilisateurs.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="55.0" layoutY="290.0" onMouseClicked="#Liste_Tag" prefHeight="117.0" prefWidth="382.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Text layoutX="149.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des tags differents" textAlignment="CENTER" wrappingWidth="218.68455412983894">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="76.0" fitWidth="76.0" layoutX="73.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../style/classement.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="443.0" layoutY="165.0" onMouseClicked="#Centre_Interet" prefHeight="117.0" prefWidth="382.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Text layoutX="149.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Centre d'interet d'un utilisateur" textAlignment="CENTER" wrappingWidth="218.68455412983894">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="68.0" fitWidth="76.0" layoutX="36.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../style/marquage.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="443.0" layoutY="290.0" onMouseClicked="#Liste_Utilisateur" prefHeight="117.0" prefWidth="382.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Text layoutX="149.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des utilisateurs pour un tag donnée" textAlignment="CENTER" wrappingWidth="218.68455412983894">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="83.0" fitWidth="98.0" layoutX="32.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../style/liste.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Line endX="-122.0" endY="221.5" layoutX="950.0" layoutY="190.0" startX="-122.5" startY="-23.0" strokeWidth="5.0" />
+            <Button layoutX="14.0" layoutY="458.0" mnemonicParsing="false" onMouseClicked="#Out" prefHeight="54.0" prefWidth="52.0" style="-fx-background-color: #FFFFFF;" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="47.0" fitWidth="36.0" layoutX="22.0" layoutY="467.0" onMouseClicked="#Out" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../style/log%20out.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text layoutX="249.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue cher Admin" wrappingWidth="377.6708984375">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
